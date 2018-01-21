@@ -1,0 +1,15 @@
+<div id="img_count">
+	<img src="unnamed.jpg" alt="img">
+	<input type="text" name="" id="count_num">
+</div>
+
+<script type="text/javascript">
+	var counter =0;
+	document.getElementById("img_count").addEventListener("click", function(){
+    counter = counter+1;
+    console.log("cnt :"+counter);
+    document.getElementById("count_num").value =counter;
+  //document.getElementById("count_num").value = counter;
+
+	});
+</script>

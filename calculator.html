@@ -1,0 +1,63 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	
+
+<div class="container">
+	<div style="border: 1px solid green;width: 90px;padding: 1px;">
+	 <div class="form-group">
+        <input type="text" class="form-control" id="getfirst" style="width: 80px;" />
+        <input type="text" class="form-control" id="getsecond" style="width: 80px;"/>
+        <input type="text" class="form-control" id="result" style="width: 80px;" />
+        </div>
+
+        <div class="form-group">
+        <button class="btn btn-success" id="add">+</button>
+	     <button class="btn btn-success" id="substract">-</button>
+		 <button class="btn btn-success" id="multiply">*</button>
+		 <button class="btn btn-success" id="divide">/</button>
+        </div>
+
+        <div class="form-group">
+        
+        </div>
+    </div>
+</div>
+	</body>
+</html>
+
+<script>
+/*const nm =prompt("enter your name");
+console.log(nm);
+*/
+var one;
+var second;
+document.getElementById("add").addEventListener("click",function(e){
+one = document.getElementById("getfirst").value;
+second = document.getElementById("getsecond").value;
+document.getElementById("result").value = parseInt(one)+parseInt(second);
+});
+
+document.getElementById("substract").addEventListener("click",function(e){
+one = document.getElementById("getfirst").value;
+second = document.getElementById("getsecond").value;
+document.getElementById("result").value = parseInt(one)-parseInt(second);
+});
+
+document.getElementById("multiply").addEventListener("click",function(e){
+one = document.getElementById("getfirst").value;
+second = document.getElementById("getsecond").value;
+document.getElementById("result").value = parseInt(one)*parseInt(second);
+});
+
+document.getElementById("divide").addEventListener("click",function(e){
+one = document.getElementById("getfirst").value;
+second = document.getElementById("getsecond").value;
+document.getElementById("result").value = parseInt(one)/parseInt(second);
+});
+
+
+
+</script>
